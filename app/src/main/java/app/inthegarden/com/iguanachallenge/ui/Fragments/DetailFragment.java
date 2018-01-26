@@ -23,7 +23,7 @@ import app.inthegarden.com.iguanachallenge.io.HTTPConnectionManager;
 import app.inthegarden.com.iguanachallenge.pojo.Address;
 import app.inthegarden.com.iguanachallenge.pojo.Detail;
 import app.inthegarden.com.iguanachallenge.pojo.Phone;
-import app.inthegarden.com.iguanachallenge.ui.CircleTransform;
+import app.inthegarden.com.iguanachallenge.ui.Util.CircleTransform;
 import retrofit2.Call;
 import retrofit2.Response;
 

@@ -18,7 +18,7 @@
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:layout_margin">10dp</item>
         <item name="android:textAlignment">center</item>
-        <item name="android:text">@string/hello_blank_fragment</item>
+        <item name="android:text">@string/not_found</item>
     </style>
 
     <style name="CardViewPhone">

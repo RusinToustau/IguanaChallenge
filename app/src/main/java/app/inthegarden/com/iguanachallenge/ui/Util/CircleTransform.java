@@ -1,4 +1,4 @@
-package app.inthegarden.com.iguanachallenge.ui;
+package app.inthegarden.com.iguanachallenge.ui.Util;
 
 import android.content.Context;
 import android.graphics.Bitmap;
