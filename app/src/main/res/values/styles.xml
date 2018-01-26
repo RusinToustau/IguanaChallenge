@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/icons</item>
+        <item name="colorControlActivated">@color/icons</item>
+        <item name="colorControlHighlight">@color/icons</item>
+    </style>
+
+    <style name="fd_text_views">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:text">@string/hello_blank_fragment</item>
+    </style>
+
+    <style name="CardViewPhone">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">140dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="CardViewPhone_type">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+    <style name="CardViewPhone_number">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,110 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.inthegarden.com.iguanachallenge.ui.Fragments.DetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/fd_iv"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:drawableLeft="@drawable/ic_account"
+                android:id="@+id/fd_tv_name"
+                style="@style/fd_text_views"/>
+            <TextView
+                android:drawableLeft="@drawable/ic_cake_black"
+                android:id="@+id/fd_tv_birth"
+                style="@style/fd_text_views"/>
+            <TextView
+                android:drawableLeft="@drawable/ic_history"
+                android:id="@+id/fd_tv_created"
+                style="@style/fd_text_views"/>
+            <TextView
+                android:drawableLeft="@drawable/ic_business"
+                android:id="@+id/fd_tv_work_location"
+                style="@style/fd_text_views"/>
+            <TextView
+                android:drawableLeft="@drawable/ic_location"
+                android:id="@+id/fd_tv_home_location"
+                style="@style/fd_text_views"/>
+
+            <!--Phones-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--CardView-->
+                <android.support.v7.widget.CardView
+                    style="@style/CardViewPhone">
+
+                    <TextView
+                        style="@style/CardViewPhone_type"
+                        android:text="@string/home"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:src="@drawable/ic_local_phone"/>
+                    <TextView
+                        android:id="@+id/fd_tv_home_phone"
+                        style="@style/CardViewPhone_number"
+                        android:text="4444-4444"/>
+                </android.support.v7.widget.CardView>
+                <!--CardView-->
+                <android.support.v7.widget.CardView
+                    style="@style/CardViewPhone">
+                    <TextView
+                        style="@style/CardViewPhone_type"
+                        android:text="@string/office"/>
+                    <TextView
+                        android:id="@+id/fd_tv_office_phone"
+                        style="@style/CardViewPhone_number"
+                        android:text="4444-4444" />
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:src="@drawable/ic_business" />
+                </android.support.v7.widget.CardView>
+                <!--CardView-->
+                <android.support.v7.widget.CardView
+                    style="@style/CardViewPhone">
+                    <TextView
+                        style="@style/CardViewPhone_type"
+                        android:text="@string/cellphone" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:src="@drawable/ic_phone_android" />
+                    <TextView
+                        android:id="@+id/fd_tv_cell_phone"
+                        style="@style/CardViewPhone_number"
+                        android:text="4444-4444" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>
