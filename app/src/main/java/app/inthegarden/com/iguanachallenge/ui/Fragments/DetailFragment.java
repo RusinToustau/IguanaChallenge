@@ -71,7 +71,6 @@ public class DetailFragment extends Fragment {
             call.enqueue(new DetailRespose());
         } else {
             Toast.makeText(getContext(),R.string.connection_lost,Toast.LENGTH_LONG).show();
-            onStop();
         }
         return view;
     }

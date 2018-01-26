@@ -1,7 +1,10 @@
 package app.inthegarden.com.iguanachallenge.ui.Activities;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Handler;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -40,11 +43,13 @@ public class SplashActivity extends AppCompatActivity {
         Toast.makeText(this,"Debes estar conectado para continuar"
                 ,Toast.LENGTH_SHORT).show();
         handler.postDelayed(new Runnable() {
+            @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             @Override
             public void run() {
-                onStop();
+                finishAffinity();
             }
-        },1000);
+        },1500);
     }
 
 }
